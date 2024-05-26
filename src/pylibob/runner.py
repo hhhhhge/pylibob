@@ -76,6 +76,7 @@ class ServerRunner(Runner):
                 asgi_app,
                 host=self.host,
                 port=self.port,
+                log_level="error"
                 **self.uvicorn_params,
             ),
         ).serve()
